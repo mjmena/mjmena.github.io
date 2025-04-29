@@ -17,15 +17,15 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        nodejs = pkgs.nodejs_20; # Using Node.js 20 (LTS as of 2024)
       in
       {
         devShells.default = pkgs.mkShell {
           name = "nextjs-dev-shell";
 
           buildInputs = [
-            nodejs
+            pkgs.nodejs
             pkgs.openssl # Often needed for Node.js native modules
+            pkgs.typescript-language-server
           ];
           NODE_OPTIONS = "--openssl-legacy-provider";
           shellHook = ''
