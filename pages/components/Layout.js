@@ -5,7 +5,7 @@ export default function Layout({ children }) {
     <div className="min-h-screen min-w-screen bg-primary">
       <div className="flex-col text-primary max-w-screen-xl min-h-screen m-auto bg-nuetral">
         <header className="max-w-screen-md m-auto">
-          <div className="text-2xl sm:text-6xl text-center">Martin J. Mena</div>
+          <div className="text-2xl sm:text-6xl text-center">Martin Mena</div>
           <div className="text-lg sm:text-2xl py-5 text-center">
             Software Developer
           </div>
